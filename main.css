@@ -124,6 +124,7 @@
 .discounts-info{
     display: grid;
     grid-template-columns: auto auto;
+    margin: 20px 0;
 
 }
 .discounts-info-img{
@@ -159,3 +160,47 @@ footer{
 .footer-text{
     border: black solid 2px;
 }
+
+
+
+/* Making Responsive */
+@media only screen and (max-width: 768px) {
+
+    /* contaner our-popular-tours */
+    .our-popular-tours{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .choose-destination */
+
+    .firstRow{
+        display: flex;
+        gap: 15px;
+        max-width: 100%;
+        margin: 20px 0 20px 0;
+        flex-direction: column;
+    }
+    .destination-img{
+        width: 100%;
+        height: 300px;
+    }
+    .secondRow{
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .thirdRow{
+        display: flex;
+        gap: 15px;
+        margin: 20px 0 20px 0;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .destination-img{
+        max-width: 100%;
+    }
+
+
+  }
