@@ -4,20 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Web Assignment</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+     <!-- tailwind -->
+     <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script> -->
+
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <nav>
-    
+    <nav class="contaner navMenu">
+        <div class="logo">
+            <img  src="Images/logo.png" alt="">
+            <h3>World<span>Tour</span></h3>
+        </div>
+        <div class="itemsContain">
+            <ul>
+                <li>Home</li>
+                <li>Packages</li>
+                <li>Testimonial</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="dropDown">
+            <img style=" width: 16.5px; height: 10.5px;" src="Images/bars_solid.svg" alt="">
+            <ul class="dropDownList">
+                <li>Home</li>
+                <li>Packages</li>
+                <li>Testimonial</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
     </nav>
 
     <div class="banner-img contaner">
         <!-- <img src="Images/bannerimg.png" alt=""> -->
         <div class="banner-inner">
             <div class="banner-text">
-                <h3 class="banner-h3">Explore YournTravel</h3>
+                <h3 class="banner-h3">Explore World Tours</h3>
                 <p class="banner-p">It was because of a deep interest in 
-                    travelling and adventures, We are now one of the <br> leading Destination Management Companies in Bangladesh.
+                    traveling and adventures, We are now one of the leading Destination Management Companies in Bangladesh.
                 </p>
             </div>
             <div class="banner-form">
@@ -37,34 +68,28 @@
         </div>
     </div>
 
-    <!---Our Popular Toures-->
+    <!---Our Popular Tours-->
     <div class="contaner our-popular-tours">
         <div class="our-popular-tours-content">
-            <div>
                 <h3>Our Popular Tours</h3>
-            <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
-                 Sodales dictumst nec nibh pellentesque.</p>
-           <ul>
-                <li>
-                    Tempus euismod lacus mauris dignissim quis in ultrices.
-                     Magna nullam odio neque diam. Sociis erat at .
+                <p>Discover our versatile event spaces, perfect for hosting memorable gatherings and special occasions.</p>
+                <ul>
+                    <li>
+                        Our hotel offers an array of amenities to unwind and rejuvenate. 
+                    </li>
+                    <li>
+                        Dive into our sparkling swimming pool, work up a sweat in our
+                         well-equipped fitness center, or pamper yourself with a soothing spa treatment. 
                 </li>
                 <li>
-                  Tempus euismod lacus mauris dignissim quis in ultrices.
-                     Magna nullam odio neque diam. Sociis erat at .
-                </li>
-                <li>
-                    Tempus euismod lacus mauris dignissim quis in ultrices.
-                    Magna nullam odio neque diam. Sociis erat at .
+                    From cozy standard rooms to lavish suites offering breathtaking views, there's a perfect retreat for every traveler.
                 </li>
             
            </ul>
-           <p>Amet consectetur. Vulputate commodo felis molestie risus 
-            ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet.
-             Id bibendum nunc senectus semper tincidunt. </p>
-            <button>Read More</button>
-            </div>
-            
+            <p>Discover our versatile event spaces, perfect for hosting memorable gatherings and special occasions. 
+                From intimate meetings to grand celebrations, our flexible venues cater to your every need, ensuring a seamless and unforgettable event.
+            </p>
+            <button class="btn">Read More</button>
         </div>
         <div class="our-popular-tours-img">
             <img src="Images/toursimg.png" alt="">
@@ -75,8 +100,8 @@
     <div class=" contaner choose-destination">
         <div class="choose-destination-text">
             <h3>Choose Your Destination</h3>
-            <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. 
-                <br>Sodales dictumst nec nibh pellentesque.
+            <p>Indulge your senses in our culinary delights as we lead you to our dining facilities. 
+                <br> Experience a culinary adventure with our array of restaurants, serving tantalizing dishes crafted by our skilled chefs. 
             </p>
         </div>
 
@@ -121,116 +146,203 @@
 
     <!-- why choose us -->
 <div class="contaner">
-    <div class="choose-us">
-        <h3 class="choose-us-h3">Why Choose Us</h3>
-        <p class="choose-us-p"> Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
-            Sodales dictumst nec nibh pellentesque.</p>
-    </div>
-    <div class="choose-resone1">
+    <div class="why-choose-us">
         <div>
-            <img src="" alt="">
-            <h3>Handpicked Hotels</h3>
-            <p> Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
-                Sodales dictumst nec nibh pellentesque. </p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <h3>Handpicked Hotels</h3>
-            <p> Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
-                Sodales dictumst nec nibh pellentesque. </p>
+            <h3 class="choose-us-h3">Why Choose Us</h3>
+            <p class="choose-us-p"> Indulge your senses in our culinary delights as we lead you to our dining facilities. 
+                <br> Experience a culinary adventure with our array of
+                 restaurants, serving tantalizing dishes crafted by our skilled chefs. </p>
         </div>
     </div>
-    <div class="choose-resone2">
-        <div>
-            <img src="" alt="">
-            <h3>Handpicked Hotels</h3>
-            <p> Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
-                Sodales dictumst nec nibh pellentesque. </p>
+    <!-- <div class="choose-us"> -->
+        <div class="choose-resone1">
+            <div class="resone1">
+                <div class="choose">
+                    <img src="Images/hotel.png" alt="">
+                    <h3 class="chooseH">Handpicked Hotels</h3>
+                    <p class="chooseP"> Discover our versatile event spaces, perfect for hosting memorable 
+                        gatherings and special occasions. From intimate meetings to grand celebrations, our flexible 
+                        venues cater to your every need, ensuring a seamless and unforgettable event.   </p>
+                </div>
+            </div>
+            <div class="resone2">
+                <div class="choose">
+                    <img src="Images/location.svg" alt="">
+                    <h3 class="chooseH">World Class Service</h3>
+                    <p class="chooseP"> 
+                        Discover our versatile event spaces, perfect for hosting memorable 
+                        gatherings and special occasions. From intimate meetings to grand celebrations, our flexible 
+                        venues cater to your every need, ensuring a seamless and unforgettable event.    
+                    </p>
+    
+                </div>
+            </div>
         </div>
-    </div>
+
+
+        <div class="choose-resone2">
+            <div class="resone1">
+                <div class="choose">
+                    <img  src="Images/percent.svg" alt="">
+                    <h3 class="chooseH">Handpicked Hotels</h3>
+                    <p class="chooseP"> Discover our versatile event spaces, perfect for hosting memorable 
+                        gatherings and special occasions. From intimate meetings to grand celebrations, our flexible 
+                        venues cater to your every need, ensuring a seamless and unforgettable event.  
+                     </p>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
 </div>
 
 
 <!-- Deals & Discounts -->
     <div class="contaner">
-        <div>
-
+        <div class="dealsDiscount">
+            <h3>Deals & Discounts</h3>
+            <p>
+                Experience a culinary adventure with our array of
+                 restaurants, serving tantalizing dishes crafted by our skilled chefs.
+            </p>
         </div>
         <div class="discounts-info">
-            <img class="discounts-info-img" src="Images/Group_39.png" alt="">
+            <!-- <img class="discounts-info-img" src="Images/Group_39.png" alt=""> -->
             <div class="booking-info">
-                <div>
-                    <h5>7 Days/6 Night</h5>
-                    <h5>Max:10</h5>
-                    <h5>Malaysia</h5>
+                <div class="innerDiv">
+                    <div class="time-location">
+                        <h5>7 Days/6 Night</h5>
+                        <h5>Max:10</h5>
+                        <h5>Malaysia</h5>
+                    </div>
+                    <div>
+                        <h3 class="tour">Tour To Satorini</h3>
+                        <p> Amet consectetur. Vulputate commodo felis 
+                            molestie risus  ornare nulla amet et. Libero commodo 
+                            sagittis dignissim adipiscing quis. Habitant adipiscing. 
+                        </p>
+                        <h4 class="price"> Price:$1300=1500</h4>
+                        <button class="bookNow">Book Now</button>
+                    </div>
                 </div>
-                <div>
-                    <h3>Tour To Satorini</h3>
-                    <p> Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
-                        Sodales dictumst nec nibh pellentesque. </p>
-                    <h4> Price:$1300=1500</h4>
-                    <button>Book Now</button>
+            </div>
+        </div>
+
+        <div class="discounts-info-middle">
+            <!-- <img class="discounts-info-img" src="Images/Group_40.png" alt=""> -->
+            <div class="booking-info middle-info">
+                <div class="innerDiv">
+                    <div class="time-location">
+                        <h5>7 Days/6 Night</h5>
+                        <h5>Max:10</h5>
+                        <h5>Malaysia</h5>
+                    </div>
+                    <div>
+                        <h3>Tour To Satorini</h3>
+                        <p> Amet consectetur. Vulputate commodo felis 
+                            molestie risus  ornare nulla amet et. 
+                            Libero commodo sagittis dignissim adipiscing quis. 
+                            Habitant adipiscing. 
+                        </p>
+                        <h4> Price:$1300=1500</h4>
+                        <button class="bookNow">Book Now</button>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="discounts-info">
-            <img class="discounts-info-img" src="Images/Group_40.png" alt="">
+            <!-- <img class="discounts-info-img" src="Images/Group_39.png" alt=""> -->
             <div class="booking-info">
-                <div>
-                    <h5>7 Days/6 Night</h5>
-                    <h5>Max:10</h5>
-                    <h5>Malaysia</h5>
-                </div>
-                <div>
-                    <h3>Tour To Satorini</h3>
-                    <p> Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
-                        Sodales dictumst nec nibh pellentesque. </p>
-                    <h4> Price:$1300=1500</h4>
-                    <button>Book Now</button>
+                <div class="innerDiv">
+                    <div class="time-location">
+                        <h5>7 Days/6 Night</h5>
+                        <h5>Max:10</h5>
+                        <h5>Malaysia</h5>
+                    </div>
+                    <div>
+                        <h3>Tour To Satorini</h3>
+                        <p>Amet consectetur. Vulputate commodo felis 
+                            molestie risus  ornare nulla amet et. Libero commodo 
+                            sagittis dignissim adipiscing quis.
+                             Habitant adipiscing.
+                        </p>
+                        <h4 class="price"> Price:$1300=1500</h4>
+                        <button class="bookNow">Book Now</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="discounts-info">
-            <img class="discounts-info-img" src="Images/Group_39.png" alt="">
-            <div class="booking-info">
-                <div>
-                    <h5>7 Days/6 Night</h5>
-                    <h5>Max:10</h5>
-                    <h5>Malaysia</h5>
-                </div>
-                <div>
-                    <h3>Tour To Satorini</h3>
-                    <p> Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
-                        Sodales dictumst nec nibh pellentesque. </p>
-                    <h4> Price:$1300=1500</h4>
-                    <button>Book Now</button>
-                </div>
-            </div>
+        <div class="seeAllPacks">
+            <button type="button" class="seeAllPack">See All Packages</button>
         </div>
 
     </div>
 
+<!-- After See All Packages-->
+<div class="contaner">
+    <div class="getLost" >
+        <div class="simplePlace" >
+            <h3>A Simple Perfect Place <br>To Get Lost</h3>
+            <p>
+                Discover our versatile event spaces, perfect for hosting memorable gatherings and special occasions.
+            </p>
+            <ul>
+                <li>Our hotel offers an array of amenities to unwind and rejuvenate.
+                </li>
+                <li>
+                    From cozy standard rooms to lavish suites offering breathtaking views, there's a perfect retreat for every traveler.
+                </li>
+            </ul>
+            <button> See More</button>
+        </div>
+        <div class="simpleVideo">
+            <h3>Watch Our Mountain in <br>Bangladesh</h3>
+            <img src="Images/Group_40089.png" alt="">
+            <!-- <video class="video" src="Images/Group_39.png" controls> </video> -->
+        </div>
+    </div>
 
+    <div class="getLost">
+        <div class="newsL">
+            <h3>Newsletter</h3>
+            <p>Get your daily dose of travel news & tips. Sign up today!</p>
+            <hr>
+            <input type="text" placeholder="Enter your name">
+            <input type="email" name="" id="" placeholder="Enter your email">
+            <input type="button" value="Subscribe">
+        </div>
+        <div class="newsImg">
+            <img src="Images/Rectangle_8.png" alt="" srcset="">
+            <div class="travelCom">
+                <h4>Travel.com</h4>
+                <h3>Save uo to 70%</h3>
+            </div>
+        </div>
+    </div>
+
+</div>
 
     <!--- Footer Section -->
     <footer>
         <div class="footer-text">
-
-            <h3><img src="Images/logo.png" alt="">Hero <span class="travel">Travel</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur. 
-                Nulla sit viverra morbi vitae blandit orci potenti vulputate. 
-                Leo <br> erat maecenas vitae elementum ultricies nullam. 
+            <div class="logo">
+                <img src="Images/logo.png" alt="">
+                <h3>World<span class="travel">Tour</span></h3>
+            </div>
+            <p>
+                We invite you to experience the epitome of hospitality and luxury with us. <br>
+                Book your stay with us and  embark on a journey of unforgettable experiences. 
             </p>
         </div>
-        <div>
-            <ul>
-                <li>
-                    <i></i>
-                </li>
-            </ul>
+        <div class="footer-icons">
+            <div><img src="Images/tw.svg" alt=""></div>
+            <div><img src="Images/fb.svg" alt=""></div>
+            <div><img src="Images/instagram.svg" alt=""></div>
+            <div> <img src="Images/github.svg" alt=""></div>
         </div>
+        <hr>
+        <p class="footer-copyright">2017.All Rights Reserved.</p>
     </footer>
 
 </body>
